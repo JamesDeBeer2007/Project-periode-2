@@ -1,0 +1,37 @@
+#Earth{
+    background-color: darkgreen;
+    padding: 1%;
+}
+#Moon{
+    background-color: darkblue;
+    padding: 1%;
+    color: aliceblue;
+}
+#Sun{
+    background-color: orange;
+    padding: 1%;
+}
+
+#incrementButton1 {
+    transition: transform 0.1s; /* CSS transition for the "transform" property */
+}
+
+#incrementButton1.clicked {
+    transform: scale(0.9); 
+}
+
+#incrementButton2 {
+    transition: transform 0.1s; /* CSS transition for the "transform" property */
+}
+
+#incrementButton2.clicked {
+    transform: scale(0.9); 
+}
+
+#incrementButton3 {
+    transition: transform 0.1s; /* CSS transition for the "transform" property */
+}
+
+#incrementButton3.clicked {
+    transform: scale(0.9); 
+}
