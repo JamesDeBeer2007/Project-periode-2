@@ -1,8 +1,10 @@
-const scoreElement = document.getElementById("score");
-const incrementButton = document.getElementById("incrementButton");
+let scoreElement = document.getElementById("score");
+let incrementButton = document.getElementById("incrementButton");
 
-const buyUpgrade1 = document.getElementById("buyUpgrade1");
-const buyPassiveUpgrade = document.getElementById("buyPassiveUpgrade");
+let buyUpgrade1 = document.getElementById("buyUpgrade1");
+let buyPassiveUpgrade = document.getElementById("buyPassiveUpgrade");
+let buyPassiveUpgrade2 = document.getElementById("buyPassiveUpgrade");
+
 
 let score = 0;
 let clickValue = 1; // Score increment per click
@@ -12,6 +14,10 @@ let upgrade1Count = 0;
 let passiveUpgradeCost = 30;
 let passiveScorePerSecond = 0;
 let passiveUpgradeCount = 0;
+
+let passiveUpgradeCost2 = 100;
+//let passiveScorePerSecond2 = 0;
+//let passiveUpgradeCount2 = 0;
 
 function updateScore() {
     scoreElement.textContent = score.toFixed(2); // Format the score with a maximum of two decimal places
@@ -55,7 +61,8 @@ buyPassiveUpgrade.addEventListener("click", function() {
     }
 });
 
-// Update the score every second for passive upgrades
+
+
 setInterval(function() {
     score += passiveScorePerSecond;
     updateScore();
